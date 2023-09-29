@@ -54,19 +54,25 @@ a {
 /* Styles for todo on mobile */
 @media (max-width: 768px) {
   .todo {
-    flex-direction: column; /* Stack elements vertically on small screens */
+    flex-direction: column;
     padding: 1rem;
   }
 
   .todo > div:last-of-type {
-    margin-top: 1rem; /* Add some space between the two inner divs */
+    margin-top: 1rem;
   }
 
   input {
-    width: auto; /* Let the input element size itself based on content */
-    margin-right: 0.5rem; /* Add some space between the checkbox and button */
+    width: auto;
+    margin-right: 0.5rem;
+  }
+
+  button {
+    font-size: 0.8rem; /* Adjust the font size to make the button smaller */
+    padding: 0.5rem 1rem; /* Adjust padding to control the button size */
   }
 }
+
 
 
 .loader {
