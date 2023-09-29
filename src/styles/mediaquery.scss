@@ -8,3 +8,16 @@
     }
   }
 }
+
+
+@media (max-width: 900px) {
+  .login {
+    padding: 0;
+
+    > section {
+      // Add your responsive styles here for mobile devices
+      @include container(100%, unset, 2rem); /* Adjust container width for mobile */
+      min-height: auto; /* Reset min-height for mobile */
+    }
+  }
+}

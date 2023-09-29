@@ -28,9 +28,22 @@
       padding: 0.5rem 1rem; /* Adjust padding as needed */
     }
   }
+
+  // Responsive Styles
+  @media screen and (max-width: 768px) {
+    padding: .5rem .8rem; // Adjust padding for smaller screens
+    > div {
+      h2 {
+        font-size: .8rem; // Adjust font size for smaller screens
+      }
+    }
+    > article {
+      > a, > button {
+        font-size: 0.7rem; // Adjust font size for smaller screens
+        padding: 0.2rem 0.5rem; // Adjust padding for smaller screens
+      }
+    }
+  }
+
+  // Add more media queries for other screen sizes as needed
 }
-
-
- 
-
- 

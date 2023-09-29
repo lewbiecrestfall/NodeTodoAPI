@@ -88,3 +88,39 @@ a {
   background-color: #3498db; /* Updated container background color */
   color: #fff; /* Updated text color */
 }
+
+
+@media (max-width: 767px) {
+  .home {
+    .heading {
+      font-size: 1.5rem; /* Decreased font size for mobile */
+      padding-top: 5vmax; /* Adjusted padding */
+    }
+
+    p {
+      font-weight: 400; /* Adjusted font weight for mobile */
+    }
+  }
+
+  .todosContainer {
+    padding: 2rem; /* Adjusted padding for mobile */
+  }
+
+  .todo {
+    padding: 1rem; /* Adjusted padding for mobile */
+  }
+
+  .loader {
+    font-size: 1.5rem; /* Decreased font size for mobile */
+    padding: 2rem; /* Adjusted padding for mobile */
+  }
+
+  .btn {
+    font-size: 1rem; /* Decreased font size for mobile */
+    padding: 0.5rem 1rem; /* Adjusted padding for mobile */
+  }
+
+  .container {
+    padding: 2rem; /* Adjusted padding for mobile */
+  }
+}

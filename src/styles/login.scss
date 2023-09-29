@@ -1,7 +1,7 @@
 .login > section {
-  @include container(900px, unset, 2rem);
+  @include container(100%, unset, 2rem); /* Adjusted max-width for responsiveness */
   min-height: 80%;
-  // background-color: #ff6b6b4e; /* Updated background color */
+  /* Remove the background-color for mobile or set it to your desired value */
   
   > form {
     @include flexBox(column, center, flex-start, 2rem);
@@ -9,8 +9,19 @@
 
     button {
       @include styledText(1rem, 700); /* Updated font size and weight */
-      @include myButton(18.75rem, 1rem, #3498db, #fff); /* Updated button styles */
+      @include myButton(100%, 1rem, #3498db, #fff); /* Updated button styles for full width */
       margin-top: 2rem; /* Added margin for spacing */
+    }
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+    padding: 1rem; /* Adjusted padding for better spacing on smaller screens */
+    
+    > form {
+      button {
+        margin-top: 1rem; /* Adjusted margin for spacing on smaller screens */
+      }
     }
   }
 }
