@@ -54,6 +54,9 @@ a {
 input {
   width: 2rem;
   height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Styles for todo on mobile */
