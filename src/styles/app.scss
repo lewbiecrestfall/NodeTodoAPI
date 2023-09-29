@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Quicksand", sans-serif; /* Updated font family */
+}
+
+@import "features";
+@import "header";
+@import "login";
+@import "mediaquery";
+
+a {
+  text-decoration: none;
+  color: #ff6b6b; /* Updated link color */
+}
+
+.home {
+  text-align: center;
+  .heading {
+    @include styledText(2rem, 700, uppercase); /* Increased font weight */
+    padding-top: 10vmax;
+    color: #2ecc71; /* Updated heading color */
+  }
+
+  p {
+    margin: 2rem 0;
+    font-weight: 500; /* Adjusted font weight */
+    color: #3498db; /* Updated text color */
+  }
+}
+
+.todosContainer {
+  @include flexBox(column, center, flex-start);
+  @include fill;
+  @include container(900px, unset, 3rem 0);
+}
+
+.todo {
+  background-color: #f39c12; /* Updated todo background color */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added box shadow */
+
+  @include flexBox(row, center, space-between);
+  width: 100%;
+  padding: 2rem;
+  > div:last-of-type {
+    @include flexBox(row);
+  }
+
+  input {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.loader {
+  @include defaultStyle;
+  @include flexBox(column, center, center);
+  @include styledText(2rem, 700, uppercase); /* Increased font weight */
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e74c3c; /* Updated loader background color */
+  color: #fff; /* Updated text color */
+}
+
+.btn {
+  @include styledText;
+  @include myButton;
+  background-color: #27ae60; /* Updated button background color */
+  color: #fff; /* Updated button text color */
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2ecc71; /* Updated button hover color */
+  }
+}
+
+.container {
+  @include defaultStyle;
+  padding: 5rem 2rem;
+  background-color: #3498db; /* Updated container background color */
+  color: #fff; /* Updated text color */
+}

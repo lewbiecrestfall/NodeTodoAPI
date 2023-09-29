@@ -1,0 +1,36 @@
+.header {
+  background-color: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  width: 100%;
+
+  > div {
+    h2 {
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+
+  > article {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Apply common styling to all links within <article> */
+    > a, > button {
+      @include styledText(1rem, 700); /* Use the same font size (1rem) and weight (700) for all links and buttons */
+      @include myButton(8rem, 0.5rem, #ff6b6b, #fff);
+      margin-left: 1rem;
+      width: auto;
+      padding: 0.5rem 1rem; /* Adjust padding as needed */
+    }
+  }
+}
+
+
+ 
+
+ 

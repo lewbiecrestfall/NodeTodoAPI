@@ -1,0 +1,42 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7d794; /* Initial background color */
+  animation: cuteBackgroundAnimation 10s linear infinite;
+
+  @keyframes cuteBackgroundAnimation {
+    0%, 100% {
+      background-color: #f7d794; /* Start and end color (cute color 1) */
+    }
+    25% {
+      background-color: #e17055; /* Cute color 2 */
+    }
+    50% {
+      background-color: #ffb6b9; /* Cute color 3 */
+    }
+    75% {
+      background-color: #a3d2ca; /* Cute color 4 */
+    }
+  }
+
+  .profile-info {
+    text-align: center;
+    color: #ffffff; /* Text color */
+    
+    h1 {
+      font-family: 'Your-Amazing-Font', sans-serif; /* Replace 'Your-Amazing-Font' with the actual font you want to use */
+      font-size: 36px; /* Adjust the font size as needed */
+      font-weight: bold; /* Make the text bold if desired */
+      text-transform: uppercase; /* Convert text to uppercase */
+      margin-bottom: 10px; /* Add margin to separate from the paragraph */
+    }
+
+    p {
+      font-family: Arial, sans-serif; /* Default font for paragraphs */
+      font-size: 18px; /* Adjust the font size for paragraphs */
+    }
+  }
+
+}

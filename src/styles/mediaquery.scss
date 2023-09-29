@@ -1,0 +1,10 @@
+@media (max-width: 900px) {
+  .login {
+    padding: 0;
+    
+    > section {
+      @include container(100%, unset, 2rem); /* Adjust container width */
+      min-height: auto; /* Reset min-height */
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.login > section {
+  @include container(900px, unset, 2rem);
+  min-height: 80%;
+  // background-color: #ff6b6b4e; /* Updated background color */
+  
+  > form {
+    @include flexBox(column, center, flex-start, 2rem);
+    @include inputs;
+
+    button {
+      @include styledText(1rem, 700); /* Updated font size and weight */
+      @include myButton(18.75rem, 1rem, #3498db, #fff); /* Updated button styles */
+      margin-top: 2rem; /* Added margin for spacing */
+    }
+  }
+}
