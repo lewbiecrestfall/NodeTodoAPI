@@ -51,6 +51,11 @@ a {
   align-items: center;
 }
 
+input {
+  width: 2rem;
+  height: 2rem;
+}
+
 /* Styles for todo on mobile */
 @media (max-width: 768px) {
   .todo {
@@ -63,8 +68,9 @@ a {
   }
 
   input {
-    width: auto;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
+    width: 1rem;
+    height: 1rem;
   }
 
   button {
