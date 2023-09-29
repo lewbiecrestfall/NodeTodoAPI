@@ -54,9 +54,13 @@ a {
 input {
   width: 2rem;
   height: 2rem;
-  display: flex;
+}
+
+.flexyyy{
+   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 /* Styles for todo on mobile */
